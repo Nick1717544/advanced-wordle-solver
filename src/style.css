@@ -1,0 +1,58 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* body */
+body
+{
+    background-color: #121214;
+}
+
+@media screen and (max-width: 2000px)
+{
+    .title
+    {
+        text-align: center;
+        color: #fff;
+        font-family: 'Koulen', cursive;
+        margin-top: 10px;
+    }
+    .grid-container
+    {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        column-gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1fr;
+        box-sizing: border-box;
+    }
+    .grid-item
+    {
+        color: red;
+    }
+}
+
+/* @media screen and (min-width: 600px)
+{
+    .title
+    {
+        text-align: center;
+        color: #fff;
+        font-family: 'Koulen', cursive;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px)
+{
+    .title
+    {
+        text-align: center;
+        color: #fff;
+        font-family: 'Koulen', cursive;
+        margin-top: 10px;
+    }
+} */
