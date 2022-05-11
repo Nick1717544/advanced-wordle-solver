@@ -19,19 +19,40 @@ body
     .grid-container
     {
         position: absolute;
-        top: 23%;
+        width: 25%;
+        text-align: center;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: grid;
-        column-gap: 50px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+        padding: 10px;
+        grid-template-columns: repeat(5, 1fr);
         box-sizing: border-box;
     }
     .grid-item
     {
-        color: red;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: bold;
+        vertical-align: middle;
+        box-sizing: border-box;
+        color: white;
+        border: 2px solid white;
+        text-transform: uppercase;
+        user-select: none;
+    }
+
+    .grid-item::before 
+    {
+        content: '';
+        display: inline-block;
+        padding-bottom: 100%;
     }
 }
 
