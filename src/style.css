@@ -19,9 +19,10 @@ body
     .grid-container
     {
         position: absolute;
-        width: 25%;
+        width: 350px;
+        height: 420px;
         text-align: center;
-        top: 50%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: grid;
@@ -53,6 +54,77 @@ body
         content: '';
         display: inline-block;
         padding-bottom: 100%;
+    }
+
+    .find-button
+    {
+        color: #fff;
+        background-color: #818384;
+        border: none;
+        font-family: 'Koulen', cursive;
+        border-radius: 5px;
+        height: 4%;
+        width: 10vw;
+        position: absolute;
+        top: 60%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        margin-right: 10px;
+    }
+
+    .clear-button
+    {
+        color: #fff;
+        background-color: #818384;
+        border: none;
+        font-family: 'Koulen', cursive;
+        border-radius: 5px;
+        height: 4%;
+        width: 10vw;
+        position: absolute;
+        top: 60%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        margin-left: 10px;
+    }
+
+    .answer-container
+    {
+        background-color: #fff;
+        height: 10%;
+        width: 25%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 7px;
+    }
+
+    .best-guess
+    {
+        text-align: center;
+        font-family: 'Koulen', cursive;
+        font-size: 25px;
+    }
+
+    .best-guess-answer
+    {
+        text-align: center;
+        font-family: 'Koulen', cursive;
+    }
+
+    .error-container
+    {
+        background-color: #818384;
+        height: 5%;
+        width: 10%;
+        position: absolute;
+    }
+
+    .error-text
+    {
+        color: #fff;
+        font-family: 'Koulen', cursive;
     }
 }
 
